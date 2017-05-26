@@ -15,4 +15,13 @@ $(document).ready(function () {
     $('.start').click(function (e) {
         clock.start();
     });
+        
+    $('.stop').click(function() {
+        clock.stop();
+    });
+    
+    $('.reset').click(function() {
+        clock.setTime(1500);
+        $('.message').html('');
+    });
 });

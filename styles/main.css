@@ -1,0 +1,41 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.header {
+    max-width: 100%;
+    text-align: center;
+    padding: 10px 25px 10px;
+    margin-bottom: 10px;
+}
+
+.message {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.start {
+    background: #47d147;
+    padding: 10px 15px 10px;
+    color: #fff;
+}
+
+.stop {
+    background: yellow;
+    padding: 10px;
+    color: #000;
+}
+
+.reset {
+    background: red;
+    padding: 10px;
+    color: #fff;
+}
+
+.start, .stop, .reset {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px;
+}
