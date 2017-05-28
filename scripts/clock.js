@@ -1,4 +1,5 @@
 var clock;
+$('.stop').hide();
 
 $(document).ready(function () {
 
@@ -12,12 +13,17 @@ $(document).ready(function () {
             }
         }
     });
+
     $('.start').click(function (e) {
         clock.start();
+        $('.start').hide();
+        $('.stop').show();
     });
         
     $('.stop').click(function() {
         clock.stop();
+        $('.stop').hide();
+        $('.start').show();
     });
     
     $('.reset').click(function() {

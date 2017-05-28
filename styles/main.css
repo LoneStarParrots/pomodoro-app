@@ -9,6 +9,15 @@ body {
     margin-bottom: 10px;
 }
 
+.container {
+    max-width: 100%;
+    text-align: center;
+}
+
+.clock-container {
+    display: inline-block;
+}
+
 .message {
     font-weight: bold;
     font-size: 1.2em;
