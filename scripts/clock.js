@@ -1,27 +1,28 @@
-var clock;
+var workClock, breakClock;
 
 $(document).ready(function () {
 
-    clock = $('.clock').FlipClock(1500, {
+    workClock = $('.work-clock').FlipClock(1500, {
         clockFace: 'MinuteCounter',
         countdown: true,
-        autoStart: false,
-        callbacks: {
-            start: function () {
-                $('.message').html('The clock has started!');
-            }
-        }
+        autoStart: false
+    });
+    breakClock = $('.break-clock').FlipClock(300, {
+        clockFace: 'MinuteCounter',
+        countdown: true,
+        autoStart: false
+
     });
     $('.start').click(function (e) {
-        clock.start();
+        workClock.start();
     });
-        
-    $('.stop').click(function() {
-        clock.stop();
+
+    $('.stop').click(function () {
+        workClock.stop();
     });
-    
-    $('.reset').click(function() {
-        clock.setTime(1500);
+
+    $('.reset').click(function () {
+        workClock.setTime(1500);
         $('.message').html('');
     });
 });
